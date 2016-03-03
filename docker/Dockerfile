@@ -9,8 +9,7 @@ RUN apt-get clean
 ADD package.json /root/package.json
 RUN cd /root;npm install
 
-#port 21112 for web and port 21122 for ssh
-EXPOSE 21112 21122
+EXPOSE 55555 55555
 
 #wire in a startup script
 ADD bootstrap.sh /var/www/bootstrap.sh
