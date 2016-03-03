@@ -2,8 +2,8 @@ var webpack = require('webpack');
 
 var config = {
     entry: [
-      "bootstrap-webpack!./src/bootstrap.config.js",
-      "font-awesome-webpack!./src/font-awesome.config.js",
+      "bootstrap-webpack!./src/css/bootstrap.config.js",
+      "font-awesome-webpack!./src/css/font-awesome.config.js",
     ],
     module: {
         loaders: [

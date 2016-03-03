@@ -30,8 +30,10 @@ var Main = React.createClass({
         return (
             <div>
                 <Header title="HEY YO" />
-                <div style={{padding:40,fontSize:40,opacity:0.3}} onClick={this.handleClick}>
-                    Hello {this.state.name} ({this.state.clickCount})
+                <div className="container" style={{padding:40,fontSize:40,opacity:0.7}} onClick={this.handleClick}>
+                    <i className="fa fa-smile-o"></i>
+                    Hello {this.state.name}
+                    <button type="button" className="btn btn-primary">{this.state.clickCount}</button>
                 </div>
             </div>
         )
